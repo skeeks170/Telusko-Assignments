@@ -1,6 +1,6 @@
 package Day1;
 
-public class PascalTriangleUsinItration {
+public class PascalTriangleUsingIteration {
     public static void printPascalTriangle(int numRows) {
         int[][] triangle = new int[numRows][numRows];
 
