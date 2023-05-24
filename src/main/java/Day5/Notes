@@ -1,0 +1,15 @@
+In this example, we have a Car class with a constructor, instance block, static block, static method, and an object method called drive(). Here's what each component does:
+
+Constructor: The Car class has a constructor that takes two parameters, brand and year, and initializes the corresponding instance variables.
+
+Instance block: This block is executed before the constructor. In this example, it simply prints a message.
+
+Static block: This block is executed only once when the class is loaded. In this example, it also prints a message.
+
+Static method: The staticMethod() is a static method that can be called without creating an object of the class.
+
+Object method: The drive() method is an instance method that prints a message indicating that the car is being driven.
+
+In the main() method, we create an instance of the Car class using the constructor. Then, we use the reflection API to access information about the class, constructors, and methods. We get the class name, modifiers, constructors, and methods using the reflection API and print them out.
+
+This example demonstrates how constructors, instance blocks, static blocks, static methods, and reflection API can be used in Java.
