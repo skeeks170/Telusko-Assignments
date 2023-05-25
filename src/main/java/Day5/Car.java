@@ -1,4 +1,4 @@
-package Day5;
+package main.java.Day5;
 
 import java.lang.reflect.*;
 

@@ -1,4 +1,4 @@
-package Day2;
+package main.java.Day2;
 
 public class Product {
 
