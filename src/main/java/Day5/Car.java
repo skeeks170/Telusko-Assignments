@@ -12,12 +12,12 @@ public class Car {
         this.year = year;
     }
 
-    // Instance block
+    // Instance block - Overall, instance blocks provide a way to perform initialization tasks for instance variables in Java classes.
     {
         System.out.println("Instance block: This gets executed before the constructor.");
     }
 
-    // Static block
+    // Static block - static blocks provide a way to perform static initialization tasks in Java classes, ensuring that static variables are properly initialized before they are accessed or used.
     static {
         System.out.println("Static block: This gets executed only once when the class is loaded.");
     }

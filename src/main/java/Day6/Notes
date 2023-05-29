@@ -22,6 +22,3 @@ Runtime Reflection:
 
 Annotations: Annotations can be accessed and processed at runtime using reflection. They provide metadata that can be queried and utilized during runtime.
 Interfaces: Interfaces do not provide explicit metadata or reflection capabilities. They define the contract for behavior but do not contain specific metadata about classes implementing them.
-
-
-

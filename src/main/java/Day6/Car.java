@@ -5,26 +5,18 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@interface SeatingCapacity {
-    int value();
+@Retention(RetentionPolicy.RUNTIME)
+@interface PirelliTyres{
+
+
 }
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-@interface AdditionalVariable {
-    String name();
-}
-
-@AdditionalVariable(name="transmission")
-@SeatingCapacity(7)
+@PirelliTyres
 public class Car {
-
     private String brand;
     private int year;
     private String engineType;
-    private String transmission;
 
     public Car() {
     }
@@ -53,29 +45,13 @@ public class Car {
         this.engineType = engineType;
     }
 
-    public String getTransmission() {
-        return transmission;
-    }
-
-    public void setTransmission(String transmission) {
-        this.transmission = transmission;
-    }
-
-
-
-    public void printSeatingCapacity() {
-        SeatingCapacity seatingCapacityAnnotation = this.getClass().getAnnotation(SeatingCapacity.class);
-        if (seatingCapacityAnnotation != null) {
-            int seatingCapacity = seatingCapacityAnnotation.value();
-            System.out.println("Seating Capacity: " + seatingCapacity);
-        }
-    }
-
     public static void main(String[] args) {
-        Car car = new Car();
-//        car.setBrand("Toyota");
-//        car.setYear(2012);
-//        car.setEngineType("Flat V6");
-        car.printSeatingCapacity();
+        Car car1 = new Car();
+        car1.setBrand("Toyota");
+        car1.setYear(2012);
+        car1.setEngineType("Flat V6");
+
+        System.out.println(car1);
     }
 }
+
