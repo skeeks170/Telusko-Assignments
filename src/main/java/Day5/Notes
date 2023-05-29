@@ -13,3 +13,11 @@ Object method: The drive() method is an instance method that prints a message in
 In the main() method, we create an instance of the Car class using the constructor. Then, we use the reflection API to access information about the class, constructors, and methods. We get the class name, modifiers, constructors, and methods using the reflection API and print them out.
 
 This example demonstrates how constructors, instance blocks, static blocks, static methods, and reflection API can be used in Java.
+
+=====================================
+
+Find out the name of an object or class.
+Discover what properties and methods an object or class has.
+Examine the data types of the properties.
+Modify or access the values of the properties.
+Invoke or call the methods of an object dynamically.
