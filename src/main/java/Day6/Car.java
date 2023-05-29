@@ -7,16 +7,12 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@interface PirelliTyres{
+@interface HybridEngine { }
 
-
-}
-
-@PirelliTyres
+@HybridEngine
 public class Car {
     private String brand;
     private int year;
-    private String engineType;
 
     public Car() {
     }
@@ -37,21 +33,18 @@ public class Car {
         this.year = year;
     }
 
-    public String getEngineType() {
-        return engineType;
-    }
-
-    public void setEngineType(String engineType) {
-        this.engineType = engineType;
-    }
-
     public static void main(String[] args) {
         Car car1 = new Car();
         car1.setBrand("Toyota");
         car1.setYear(2012);
-        car1.setEngineType("Flat V6");
 
         System.out.println(car1);
+
+        if (car1.getClass().isAnnotationPresent(HybridEngine.class)){
+            System.out.println("This car has hybrid engine");
+        }else {
+            System.out.println("This car is faulty as it has no engine");
+        }
     }
 }
 
